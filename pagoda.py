@@ -10,7 +10,6 @@ class NodeClass:
         # Right pointer initially set as None
         self.right = None
 
-# Helper class
 # Pagoda class
 class Pagoda:
     def __init__(self):
