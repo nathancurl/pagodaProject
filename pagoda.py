@@ -16,20 +16,20 @@ class Pagoda:
         # Initializing the root in the Pagoda as None
         self.root = None
 
-    # Method 1
+
     # To check if Pagoda is empty
     def isEmpty(self):
         # Returns True if root is equal to None
         # else returns False
         return self.root is None
 
-    # Method 2
+
     # To clear the entire Pagoda
     def clear(self):
         # Clears or Empties the entire Pagoda
         self.root = None
 
-    # Method 3
+
     # To insert node into the Pagoda
     def insert(self, val):
         # Creates a new node with data as val
@@ -47,7 +47,7 @@ class Pagoda:
         # Calling merge to attach new node to Pagoda
         return self.merge(queue, node)
 
-    # Method 4
+
     # To merge new node to Pagoda
     # New node is inserted as a leaf node
     # and to maintain the heap property
@@ -107,7 +107,7 @@ class Pagoda:
                 r.left = botnew
                 return newnode
 
-    # Methods 5
+
     # To delete a particular node
     def delete(self):
         self.root = self.delete_helper(self.root)
@@ -138,7 +138,7 @@ class Pagoda:
             # Merging Pagoda after deletion
             return self.merge(l, r)
 
-    # Method 6
+  
     # To print root of Pagoda
     def printRoot(self):
         if self.root is not None:
