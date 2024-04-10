@@ -156,9 +156,6 @@ if __name__ == "__main__":
     # Object is created of user defined type
     p = Pagoda()
 
-    # Adding elements to the object created above
-    # Custom inputs - 10,30,20,50,40.
-
     # Operation 1 on Pagoda
     # Input 1
     # Inserting element - 10
