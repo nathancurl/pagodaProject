@@ -12,33 +12,38 @@ class Pagoda():
         self.size = 0
  
     
-    def merge(self, treeA, treeB):
-            '''
-            # base case
-            # if node above is the root
-            if rc.p.p.value > rc.p.value or lc.p.p.value > lc.p.value:   # only the root node's parent is greater than the node
-                if rc.value > lc.value:
-                    self.root = lc
-                    rc.p = lc
-                    lc.p = ?   # how do we set the root children?
-                    lc.c = ?  
-                if lc.value > rc.value:
-                    self.root = rc
-                    lc.p = rc
-                    rc.p = null
-                  #  set root children?
-            
-            # recursive cases    
-            elif lc.value > rc.value:
-                parent = lc.p
-                lc.p = rc
-                compare(parent, rc)
-                
-            elif rc.value > lc.value:
-                parent = rc.p
-                rc.p = lc
-                compare(parent, lc)
-        '''
+    def merge(new):
+        return merge_helper(self.root.p, self.root.c, new)
+
+    def merge_helper(leftmost_node, rightmost.p,new):
+        # base case. Either leftmost or rightmost is the root
+        if self.root == leftmost_node or self.root == rightmost_node:
+            if new > self.root:
+                pass
+                # replace root
+            else:
+                pass
+                # place below root
+
+        elif new > leftmost_node:  # if new is greater than left node
+            if new > leftmost_node.p.c:  # if new is greater than left node sibling
+                if new > rightmost_node:  # if new is greater than right node
+                    if new > rightmost_node.p.c:  # if new is greater than right node sibling
+                        self.merge(leftmost.p, rightmost.p,new) # move up a level
+                    else:
+                        #place
+                        pass
+                else:
+                    #place
+                    pass        
+            else:
+                #place
+                pass
+        else:
+            #place
+            pass
+
+
             
     def add(self,new_node):
         return compare(self.p,new_node)
