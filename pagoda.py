@@ -11,7 +11,8 @@ class NodeClass:
         self.left = None
         # Right pointer initially set as None
         self.right = None
-
+        # Assign a depth attribute to each node that is created and set to 0
+        self.depth = 0
 # Pagoda class
 class Pagoda:
     def __init__(self):
@@ -39,7 +40,10 @@ class Pagoda:
         node = NodeClass(val)
         self.nodes.append(node)
         # Inserts into Pagoda
+        if self.root is None:
+            node.depth = 0
         self.root = self.insert_helper(node, self.root)
+
 
     def insert_helper(self, node, queue):
         # Initially the new node has no left child
@@ -58,7 +62,7 @@ class Pagoda:
     # if the new node is greater than its parent
     # both nodes are swapped and this continues till
     # all parents are greater than its children
-    # TODO: See is this works lol
+    # TODO: See if this works lol
     def merge(self, root, newnode):
         if root is None:
             # If root is None, after merge - only newnode
@@ -97,6 +101,15 @@ class Pagoda:
                         r.left = botnew
                     r = botnew
                     botnew = temp
+
+            # Update depth for merged nodes
+            temp = r
+            max_depth = 0  # Use this to track the maximum depth of merged nodes
+            while temp is not None:
+                temp.depth = max_depth  # Set depth
+                max_depth += 1  # Increment for next node
+                temp = temp.left if temp.left != r else None  # Avoid cycling indefinitely
+                
             # Merging stops after either
             # botnew or botroot becomes None
             # Condition check when
