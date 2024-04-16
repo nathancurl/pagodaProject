@@ -11,7 +11,10 @@ class NodeClass:
         self.left = None
         # Right pointer initially set as None
         self.right = None
-
+        # Assign a depth attribute to each node that is created and set to 0
+        self.depth = 0
+        self.position = 0
+        
 # Pagoda class
 class Pagoda:
     def __init__(self):
@@ -39,7 +42,10 @@ class Pagoda:
         node = NodeClass(val)
         self.nodes.append(node)
         # Inserts into Pagoda
+        if self.root is None:
+            node.depth = 0
         self.root = self.insert_helper(node, self.root)
+
 
     def insert_helper(self, node, queue):
         # Initially the new node has no left child
@@ -58,7 +64,8 @@ class Pagoda:
     # if the new node is greater than its parent
     # both nodes are swapped and this continues till
     # all parents are greater than its children
-    # TODO: See is this works lol
+    # TODO: See if this works lol
+    
     def merge(self, root, newnode):
         if root is None:
             # If root is None, after merge - only newnode
@@ -97,6 +104,15 @@ class Pagoda:
                         r.left = botnew
                     r = botnew
                     botnew = temp
+
+            
+            #Update depth for merged nodes
+            temp = r
+            max_depth = 0  # Use this to track the maximum depth of merged nodes
+            while temp is not None:
+                temp.depth = max_depth  # Set depth
+                max_depth += 1  # Increment for next node
+                temp = temp.left if temp.left != r else None  # Avoid cycling indefinitely
             # Merging stops after either
             # botnew or botroot becomes None
             # Condition check when
@@ -153,26 +169,89 @@ class Pagoda:
             # This implies Pagoda is empty
             print("Empty")
 
+
+    def update_depths(self):
+        
+        for node in self.nodes:
+            # check if node is the root. If it is, give it depth 0 and position it in the middle of the screen
+            if self.root == node:
+                node.depth = 0
+                node.position = 0
+                
+            else:
+                cur_depth = 0
+                cur_node = node
+                # calculate how far node is from root
+                running = True
+                while running:
+                   
+                    # if left is larger, left is node's parent. Move it's position to the left
+                    if cur_node.left.data > cur_node.data:
+                        #node.position -= 1/(cur_depth+1)
+                        node.position -= 2^cur_depth
+                        # parent is root
+                       
+                        if cur_node.left == self.root:
+                            cur_depth +=1
+                            running = False
+                            
+                        else:
+                            cur_depth += 1
+                            cur_node = cur_node.left
+                            
+                    # right is parent        
+                    elif cur_node.right.data > cur_node.data:
+                        #node.position += 1/(cur_depth+1)
+                        node.position += 2^cur_depth
+                        
+                        if cur_node.right == self.root:
+                            cur_depth +=1
+                            running = False
+                            
+                            
+                        else:
+                            cur_depth += 1
+                            cur_node = cur_node.right
+                    else:
+                        None
+                
+                node.depth = cur_depth
+
+        
     def draw(self):
         edges = []
         G = nx.MultiDiGraph()
+        self.update_depths()
+        
+        pos = {}
+        for node in self.nodes:
+            pos[node.data] = (node.position, -1* node.depth )
+            
 
         for node in self.nodes:
-            edges.insert(-1, (node.data, node.left.data), )
-            edges.insert(-1, (node.data, node.right.data))
+            edges.insert(-1, (node.data, node.left.data, 'b'))
+            edges.insert(-1, (node.data, node.right.data, 'r'))
             G.add_node(node.data)
         G.add_edges_from(edges)
 
-        nx.draw_networkx(G, connectionstyle = 'arc3, rad = 0.1')
+        colors = [edge[2] for edge in edges]
+        print("Red: right pointer. Blue: left pointer")
+        nx.draw_networkx(G, edge_color = colors, connectionstyle = 'arc3, rad = 0.2', pos = pos)
 
-            
+        
+        
+        
 
 if __name__ == "__main__":
     p = Pagoda()
     p.insert(5)
-    p.insert(4)
     p.insert(6)
-    p.insert(3)
+
+    p.insert(2)
+
+    print("root: ", p.root.data)
+    for node in p.nodes:
+        print(node.data, "--  (", node.depth, ", ", node.position, ")"," L: ",node.left.data," R: ",node.right.data )
 
     p.draw()
     
