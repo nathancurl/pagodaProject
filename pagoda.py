@@ -1,4 +1,4 @@
-import networkx as nx
+#import networkx as nx
 
 # Python Program to implement Pagoda
 
@@ -166,26 +166,25 @@ class Pagoda:
             # This implies Pagoda is empty
             print("Empty")
 
-    def draw(self):
-        edges = []
-        G = nx.MultiDiGraph()
+    # def draw(self):
+    #     edges = []
+    #     G = nx.MultiDiGraph()
 
-        for node in self.nodes:
-            edges.insert(-1, (node.data, node.left.data), )
-            edges.insert(-1, (node.data, node.right.data))
-            G.add_node(node.data)
-        G.add_edges_from(edges)
-
-        nx.draw_networkx(G, connectionstyle = 'arc3, rad = 0.1')
+    #     for node in self.nodes:
+    #         edges.insert(-1, (node.data, node.left.data), )
+    #         edges.insert(-1, (node.data, node.right.data))
+    #         G.add_node(node.data)
+    #     G.add_edges_from(edges)
+    #     nx.draw_networkx(G, connectionstyle = 'arc3, rad = 0.1')
 
             
 
-if __name__ == "__main__":
-    p = Pagoda()
-    p.insert(5)
-    p.insert(4)
-    p.insert(6)
-    p.insert(3)
+# if __name__ == "__main__":
+#     p = Pagoda()
+#     p.insert(5)
+#     p.insert(4)
+#     p.insert(6)
+#     p.insert(3)
 
-    p.draw()
+#     p.draw()
     

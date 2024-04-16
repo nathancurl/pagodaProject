@@ -1,0 +1,288 @@
+
+Test Run at 2024-04-15 17:57:58
+--------------------------------------------------
+Depth: 100000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00022s
+Average Delete Time per Trial: 0.00072s
+Total Time for Test: 0.24982s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:57:58
+--------------------------------------------------
+Depth: 250000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00022s
+Average Delete Time per Trial: 0.00082s
+Total Time for Test: 0.63658s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:58:00
+--------------------------------------------------
+Depth: 500000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00022s
+Average Delete Time per Trial: 0.00086s
+Total Time for Test: 1.35272s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:58:02
+--------------------------------------------------
+Depth: 750000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00022s
+Average Delete Time per Trial: 0.00101s
+Total Time for Test: 2.17821s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:58:05
+--------------------------------------------------
+Depth: 1000000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00023s
+Average Delete Time per Trial: 0.00103s
+Total Time for Test: 2.87913s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:58:09
+--------------------------------------------------
+Depth: 1250000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00022s
+Average Delete Time per Trial: 0.00106s
+Total Time for Test: 3.68455s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:58:13
+--------------------------------------------------
+Depth: 1500000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00021s
+Average Delete Time per Trial: 0.00105s
+Total Time for Test: 4.46127s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:58:18
+--------------------------------------------------
+Depth: 1750000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00022s
+Average Delete Time per Trial: 0.00104s
+Total Time for Test: 5.22522s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:58:24
+--------------------------------------------------
+Depth: 2000000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00022s
+Average Delete Time per Trial: 0.00104s
+Total Time for Test: 5.57701s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:58:31
+--------------------------------------------------
+Depth: 2500000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00022s
+Average Delete Time per Trial: 0.00104s
+Total Time for Test: 7.53180s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:58:45
+--------------------------------------------------
+Depth: 5000000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00022s
+Average Delete Time per Trial: 0.00119s
+Total Time for Test: 13.96929s
+--------------------------------------------------
+
+Test Run at 2024-04-15 17:59:13
+--------------------------------------------------
+Depth: 10000000, Trials: 30, Operations per Batch: 100
+Average Insert Time per Trial: 0.00022s
+Average Delete Time per Trial: 0.00130s
+Total Time for Test: 27.96264s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:02:39
+--------------------------------------------------
+Depth: 100000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00211s
+Average Delete Time per Trial: 0.00675s
+Total Time for Test: 0.49218s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:02:40
+--------------------------------------------------
+Depth: 250000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00212s
+Average Delete Time per Trial: 0.00738s
+Total Time for Test: 0.89908s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:02:42
+--------------------------------------------------
+Depth: 500000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00212s
+Average Delete Time per Trial: 0.00868s
+Total Time for Test: 1.66296s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:02:45
+--------------------------------------------------
+Depth: 750000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00537s
+Average Delete Time per Trial: 0.00869s
+Total Time for Test: 2.47848s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:02:48
+--------------------------------------------------
+Depth: 1000000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00214s
+Average Delete Time per Trial: 0.00985s
+Total Time for Test: 3.32290s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:02:52
+--------------------------------------------------
+Depth: 1250000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00212s
+Average Delete Time per Trial: 0.00972s
+Total Time for Test: 4.20408s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:02:57
+--------------------------------------------------
+Depth: 1500000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00213s
+Average Delete Time per Trial: 0.00939s
+Total Time for Test: 5.04202s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:03:03
+--------------------------------------------------
+Depth: 1750000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00219s
+Average Delete Time per Trial: 0.01095s
+Total Time for Test: 6.13045s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:03:10
+--------------------------------------------------
+Depth: 2000000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00212s
+Average Delete Time per Trial: 0.01060s
+Total Time for Test: 6.71248s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:03:18
+--------------------------------------------------
+Depth: 2500000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00212s
+Average Delete Time per Trial: 0.00998s
+Total Time for Test: 7.72626s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:03:33
+--------------------------------------------------
+Depth: 5000000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00213s
+Average Delete Time per Trial: 0.01128s
+Total Time for Test: 14.79625s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:04:02
+--------------------------------------------------
+Depth: 10000000, Trials: 30, Operations per Batch: 1000
+Average Insert Time per Trial: 0.00215s
+Average Delete Time per Trial: 0.01238s
+Total Time for Test: 29.19353s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:05:09
+--------------------------------------------------
+Depth: 100000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.02461s
+Average Delete Time per Trial: 0.06257s
+Total Time for Test: 2.92620s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:05:13
+--------------------------------------------------
+Depth: 250000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.02669s
+Average Delete Time per Trial: 0.07132s
+Total Time for Test: 3.66674s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:05:17
+--------------------------------------------------
+Depth: 500000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.02769s
+Average Delete Time per Trial: 0.07765s
+Total Time for Test: 4.61598s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:05:23
+--------------------------------------------------
+Depth: 750000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.02577s
+Average Delete Time per Trial: 0.08673s
+Total Time for Test: 5.68478s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:05:29
+--------------------------------------------------
+Depth: 1000000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.02984s
+Average Delete Time per Trial: 0.08475s
+Total Time for Test: 6.31710s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:05:37
+--------------------------------------------------
+Depth: 1250000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.02989s
+Average Delete Time per Trial: 0.08910s
+Total Time for Test: 7.66861s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:05:47
+--------------------------------------------------
+Depth: 1500000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.03248s
+Average Delete Time per Trial: 0.09997s
+Total Time for Test: 9.53538s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:05:56
+--------------------------------------------------
+Depth: 1750000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.02987s
+Average Delete Time per Trial: 0.09122s
+Total Time for Test: 9.57237s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:06:07
+--------------------------------------------------
+Depth: 2000000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.03370s
+Average Delete Time per Trial: 0.09476s
+Total Time for Test: 10.77850s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:06:19
+--------------------------------------------------
+Depth: 2500000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.02087s
+Average Delete Time per Trial: 0.09937s
+Total Time for Test: 12.37021s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:06:39
+--------------------------------------------------
+Depth: 5000000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.02090s
+Average Delete Time per Trial: 0.10145s
+Total Time for Test: 19.68507s
+--------------------------------------------------
+
+Test Run at 2024-04-15 18:07:16
+--------------------------------------------------
+Depth: 10000000, Trials: 30, Operations per Batch: 10000
+Average Insert Time per Trial: 0.07629s
+Average Delete Time per Trial: 0.11523s
+Total Time for Test: 36.78146s
+--------------------------------------------------
