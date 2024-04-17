@@ -10,5 +10,7 @@ so  Each node has a left and a right pointer. Nodes have the following propertie
 
 Files: 
 pagoda.py -- The pagoda data structure
-pagodaTest.py -- Test script for insertion and deletion. Tested the speed and number of insertion and deletion operations for different depths. 
+
+pagodaTest.py -- Test script for insertion and deletion. Tested the speed and number of insertion and deletion operations for different depths.
+
 pagoda_performace_tests.txt -- Contains all test information
