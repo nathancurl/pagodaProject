@@ -1,6 +1,8 @@
-import networkx as nx
-
 # Python Program to implement Pagoda
+
+
+# Import networkx to print out the Pagoda
+import networkx as nx
 
 # Class for creating a single node
 class NodeClass:
@@ -13,6 +15,7 @@ class NodeClass:
         self.right = None
         # Assign a depth attribute to each node that is created and set to 0
         self.depth = 0
+        # Assign a position attribute to each node that is created and set to 0
         self.position = 0
         
 # Pagoda class
@@ -20,6 +23,7 @@ class Pagoda:
     def __init__(self):
         # Initializing the root in the Pagoda as None
         self.root = None
+        # Create an array of nodes for printing
         self.nodes = []
 
 
@@ -41,9 +45,12 @@ class Pagoda:
         # Creates a new node with data as val
         node = NodeClass(val)
         self.nodes.append(node)
+        
         # Inserts into Pagoda
         if self.root is None:
             node.depth = 0
+
+        # Call the helper method to finish the code
         self.root = self.insert_helper(node, self.root)
 
 
@@ -51,9 +58,11 @@ class Pagoda:
         # Initially the new node has no left child
         # so the left pointer points to itself
         node.left = node
+        
         # Initially the new node has no right child
         # so the right pointer points to itself
         node.right = node
+        
         # Calling merge to attach new node to Pagoda
         return self.merge(queue, node)
 
@@ -64,23 +73,26 @@ class Pagoda:
     # if the new node is greater than its parent
     # both nodes are swapped and this continues till
     # all parents are greater than its children
-    # TODO: See if this works lol
     
     def merge(self, root, newnode):
         if root is None:
             # If root is None, after merge - only newnode
             return newnode
+            
         elif newnode is None:
             # If newnode is None, after merge - only root
             return root
+            
         else:
             # Bottom of root's rightmost edge
             botroot = root.right
             root.right = None
+            
             # bottom of newnode's leftmost edge - mostly itself
             botnew = newnode.left
             newnode.left = None
             r = None
+            
             # Iterating via loop for merging
             while botroot is not None and botnew is not None:
                 # Comparing parent and child
@@ -102,6 +114,7 @@ class Pagoda:
                         # Swapping of child and parent
                         botnew.left = r.left
                         r.left = botnew
+                    # Swap the values    
                     r = botnew
                     botnew = temp
 
@@ -217,32 +230,35 @@ class Pagoda:
                 
                 node.depth = cur_depth
 
-        
+    # Method to draw out the Pagoda        
     def draw(self):
+
+        # Declate variables using networkX
         edges = []
         G = nx.MultiDiGraph()
         self.update_depths()
         
         pos = {}
+        # Go through all the nodes, and insert them into the dictionary depending on the depth
         for node in self.nodes:
             pos[node.data] = (node.position, -1* node.depth )
             
-
+        # For all the nodes, create edges depending on whether it is a prent or child link
         for node in self.nodes:
             edges.insert(-1, (node.data, node.left.data, 'b'))
             edges.insert(-1, (node.data, node.right.data, 'r'))
             G.add_node(node.data)
         G.add_edges_from(edges)
 
+        # Colors
         colors = [edge[2] for edge in edges]
         print("Red: right pointer. Blue: left pointer")
+
+        # Finally, draw the Pagoda
         nx.draw_networkx(G, edge_color = colors, connectionstyle = 'arc3, rad = 0.2', pos = pos)
 
-        
-        
-        
-
-if __name__ == "__main__":
+# Test Cases
+# if __name__ == "__main__":
     #p = Pagoda()
     #p.insert(5)
     #p.insert(6)
