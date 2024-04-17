@@ -169,7 +169,6 @@ class Pagoda:
     # def draw(self):
     #     edges = []
     #     G = nx.MultiDiGraph()
-
     #     for node in self.nodes:
     #         edges.insert(-1, (node.data, node.left.data), )
     #         edges.insert(-1, (node.data, node.right.data))
